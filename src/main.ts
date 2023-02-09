@@ -3,7 +3,7 @@ import {proxy} from "ajax-hook";
 import * as OpenCC from 'opencc-js';
 
 (() => {
-    const translator = OpenCC.Converter({from: "hk", to: "cn"});
+    const translator = OpenCC.Converter({from: "twp", to: "cn"});
 
     function absoluteUrl(relativeUrl: string): string {
       return relativeUrl.startsWith("//") ? "https:" + relativeUrl : relativeUrl
