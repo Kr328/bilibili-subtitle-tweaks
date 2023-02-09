@@ -23,8 +23,8 @@ export default defineConfig({
         description: "增强 Bilibili 番剧的 CC 字幕，包含自动翻译及自动断行功能。",
         author: "Kr328",
         icon: 'https://www.bilibili.com/favicon.ico',
-        updateURL: "https://github.com/Kr328/bilibili-subtitle-tweaks/releases/latest/download/bilibili-redirect.meta.js",
-        downloadURL: "https://github.com/Kr328/bilibili-subtitle-tweaks/releases/latest/download/bilibili-redirect.user.js",
+        updateURL: "https://github.com/Kr328/bilibili-subtitle-tweaks/releases/latest/download/bilibili-subtitle-tweaks.meta.js",
+        downloadURL: "https://github.com/Kr328/bilibili-subtitle-tweaks/releases/latest/download/bilibili-subtitle-tweaks.user.js",
         match: [
             '*://www.bilibili.com/bangumi/play/ss*',
             '*://www.bilibili.com/bangumi/play/ep*',

@@ -6,7 +6,7 @@
 
 1. 安装 userscript (需要 Tampermonkey 等浏览器插件)
 
-   [Install](https://github.com/Kr328/bilibili-subtitle-tweaks/releases/latest/download/bilibili-redirect.user.js)
+   [Install](https://github.com/Kr328/bilibili-subtitle-tweaks/releases/latest/download/bilibili-subtitle-tweaks.user.js)
 
 2. 确认是否生效
 
