@@ -8,7 +8,7 @@
 
    [Install](https://github.com/Kr328/bilibili-subtitle-tweaks/releases/latest/download/bilibili-subtitle-tweaks.user.js)
 
-2. 确认是否生效
+2. 选择字幕
 
    ![Transformed Subtitle](./imgs/transformed-subtitle.png)
 
