@@ -22,6 +22,7 @@ export default defineConfig({
         name: "Bilibili Subtitle Tweaks",
         description: "增强 Bilibili 番剧的 CC 字幕，包含自动翻译及自动断行功能。",
         author: "Kr328",
+        license: "GPLv3",
         icon: 'https://www.bilibili.com/favicon.ico',
         updateURL: "https://github.com/Kr328/bilibili-subtitle-tweaks/releases/latest/download/bilibili-subtitle-tweaks.meta.js",
         downloadURL: "https://github.com/Kr328/bilibili-subtitle-tweaks/releases/latest/download/bilibili-subtitle-tweaks.user.js",
