@@ -18,7 +18,7 @@ export default defineConfig({
       },
       userscript: {
         namespace: "Kr328/bilibili-subtitle-tweaks",
-        version: "1.1",
+        version: "1.2",
         name: "Bilibili Subtitle Tweaks",
         description: "增强 Bilibili 番剧的 CC 字幕，包含自动翻译及自动断行功能。",
         author: "Kr328",
@@ -29,6 +29,7 @@ export default defineConfig({
             '*://www.bilibili.com/bangumi/play/ss*',
             '*://www.bilibili.com/bangumi/play/ep*',
         ],
+        "run-at": "document-start",
       },
     }),
   ],
