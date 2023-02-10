@@ -12,7 +12,7 @@ export default defineConfig({
       build: {
         metaFileName: true,
         externalGlobals: {
-          "ajax-hook": cdn.unpkg("ah", "dist/ajaxhook.min.js"),
+          "ajax-hook": cdn.jsdelivr("ah", "dist/ajaxhook.min.js"),
           "opencc-js": cdn.jsdelivr("OpenCC", "dist/umd/t2cn.js"),
         },
       },
