@@ -1,4 +1,4 @@
-import "ajax-hook";
+import 'ajax-hook';
 
 declare module 'ajax-hook' {
     interface XhrRequestConfig {
