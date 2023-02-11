@@ -22,6 +22,10 @@ import * as OpenCC from 'opencc-js';
         return text.replace("\n", "\\n");
     }
 
+    function log(msg: string) {
+        console.log(`%c[SubtitleTweaks] ${msg}`, `color: #5bc6f4;`);
+    }
+
     proxy({
         onRequest: (config, handler) => {
             const url = new URL(absoluteUrl(config.url));
@@ -55,10 +59,7 @@ import * as OpenCC from 'opencc-js';
             if (response.config.transform === true) {
                 const subtitleList: SubtitleList = JSON.parse(response.response as string);
 
-                console.log(
-                    `%c[SubtitleTweaks] Transforming ${response.config.originUrl}`,
-                    `color: #5bc6f4;`
-                );
+                log(`Transforming ${response.config.originUrl}`);
 
                 subtitleList.body.forEach((value) => {
                     const original = value.content;
@@ -69,10 +70,13 @@ import * as OpenCC from 'opencc-js';
                         result = translator(result);
                     }
 
-                    console.log(
-                        `%c[SubtitleTweaks] ${formatable(original)} => ${formatable(result)}`,
-                        `color: #5bc6f4;`
-                    );
+                    const formatTimestamp = (timestamp: number, base: number) => {
+                        return (Math.trunc(timestamp / base) % (base * 60)).toString().padStart(2, "0");
+                    };
+
+                    const timestamp = `${formatTimestamp(value.from, 3600)}:${formatTimestamp(value.from, 60)}:${formatTimestamp(value.from, 1)}`;
+
+                    log(`${timestamp}: ${formatable(original)} => ${formatable(result)}`);
 
                     value.content = result;
                 });
