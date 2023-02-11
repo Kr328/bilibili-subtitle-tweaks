@@ -3,9 +3,9 @@ lockfileVersion: 5.4
 specifiers:
   ajax-hook: ^2.1.3
   opencc-js: ^1.0.5
-  typescript: ^4.9.4
-  vite: ^4.0.4
-  vite-plugin-monkey: ^2.11.0
+  typescript: ^4.9.5
+  vite: ^4.1.1
+  vite-plugin-monkey: ^2.11.1
 
 dependencies:
   ajax-hook: 2.1.3
@@ -433,8 +433,8 @@ packages:
       supports-preserve-symlinks-flag: 1.0.0
     dev: true
 
-  /rollup/3.14.0:
-    resolution: {integrity: sha512-o23sdgCLcLSe3zIplT9nQ1+r97okuaiR+vmAPZPTDYB7/f3tgWIYNyiQveMsZwshBT0is4eGax/HH83Q7CG+/Q==}
+  /rollup/3.15.0:
+    resolution: {integrity: sha512-F9hrCAhnp5/zx/7HYmftvsNBkMfLfk/dXUh73hPSM2E3CRgap65orDNJbLetoiUFwSAk6iHPLvBrZ5iHYvzqsg==}
     engines: {node: '>=14.18.0', npm: '>=8.0.0'}
     hasBin: true
     optionalDependencies:
@@ -514,7 +514,7 @@ packages:
       esbuild: 0.16.17
       postcss: 8.4.21
       resolve: 1.22.1
-      rollup: 3.14.0
+      rollup: 3.15.0
     optionalDependencies:
       fsevents: 2.3.2
     dev: true
