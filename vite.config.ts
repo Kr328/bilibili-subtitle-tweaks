@@ -26,10 +26,7 @@ export default defineConfig({
         icon: 'https://www.bilibili.com/favicon.ico',
         updateURL: "https://github.com/Kr328/bilibili-subtitle-tweaks/releases/latest/download/bilibili-subtitle-tweaks.meta.js",
         downloadURL: "https://github.com/Kr328/bilibili-subtitle-tweaks/releases/latest/download/bilibili-subtitle-tweaks.user.js",
-        match: [
-            '*://www.bilibili.com/bangumi/play/ss*',
-            '*://www.bilibili.com/bangumi/play/ep*',
-        ],
+        match: ['*://www.bilibili.com/bangumi/play/*',],
         "run-at": "document-start",
       },
     }),
