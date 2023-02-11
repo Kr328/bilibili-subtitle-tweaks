@@ -63,7 +63,7 @@ import * as OpenCC from 'opencc-js';
                 subtitleList.body.forEach((value) => {
                     const original = value.content;
 
-                    let result = original.replace(/ -/, "\n-");
+                    let result = original.replace(/\s[-—－]/, s => `\n${s.substring(1)}`);
 
                     if (response.config.translate === true) {
                         result = translator(result);
