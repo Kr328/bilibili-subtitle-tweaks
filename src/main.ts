@@ -46,7 +46,7 @@ import * as OpenCC from 'opencc-js';
 
                     break;
                 }
-                case url.hostname === "api.bilibili.com" && /x\/player\/v2/.test(url.pathname): {
+                case url.hostname === "api.bilibili.com" && ("/x/player/wbi/v2" == url.pathname || "/x/player/v2" == url.pathname): {
                     config.inject = true;
 
                     break;
@@ -83,6 +83,8 @@ import * as OpenCC from 'opencc-js';
 
                 response.response = JSON.stringify(subtitleList);
             } else if (response.config.inject === true) {
+                log("Injecting");
+
                 const r: Result<PlayInfo> = JSON.parse(response.response as string);
 
                 const newSubtitles = r.data.subtitle?.subtitles?.flatMap((value, index) => {
